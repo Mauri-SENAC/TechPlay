@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechPlay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <body>
+            <h1>TechPlay</h1>
+            <p>Seu catálogo de jogos e aventuras digitais</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#jogos">Jogos</a>
+        <a href="#destaque">Destaque</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <main>
+        <section id="inicio" class="apresentacao">
+            <h2>Bem-vindo à TechPlay</h2>
+            <p>
+                Encontre jogos para diferentes estilos, plataformas e aventuras.
+            </p>
+        </section>
+
+        <section id="jogos">
+            <h2>Jogos disponíveis</h2>
+            <div class="lista-cards">
+                <div class="card">
+                    <img src="imagens/animalcrossing.jpg" alt="animalcrossing" width="200">
+                    <h3>Animal Crossing: New Horizons</h3>
+                    <span class="categoria">Simulação de vida</span>
+                    <p>
+                    </p>
+                    Construa a ilha dos seus sonhos, faça amizades com moradores carismáticos, decore sua casa e
+                    personalize praticamente tudo ao seu redor.
+                    <p class="preco">R$ 349,00</p>
+                    <button onclick="comprar('Animal Crossing: New Horizons', 349.00)">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/cuphead.png" alt="cuphead" width="200">
+                    <h3>Cuphead</h3>
+                    <span class="categoria">Ação/Aventura</span>
+                    <p>
+                    </p>
+                    Ação e tiros estilo "run and gun" com foco em batalhas de chefes, apresentando
+                    visuais e áudio inspirados nas animações da década de 1930.
+                    <p class="preco">R$ 49,90</p>
+                    <button onclick="comprar('Cuphead', 49.90)">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/darksouls.jpg" alt="darksouls" width="200">
+                    <h3>Dark Souls: Remastered</h3>
+                    <span class="categoria">RPG de ação/Soulslike</span>
+                    <p>
+                        Redescubra Lordran nesta versão remasterizada do clássico RPG de ação, enfrentando inimigos
+                        implacáveis e chefes memoráveis.
+                    </p>
+                    <p class="preco">R$ 199,00</p>
+                    <button onclick="comprar('Dark Souls: Remastered', 199.00)">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/dangarompa.jpg" alt="danganronpa" width="200">
+                    <h3>Danganronpa V3: Killing Harmony</h3>
+                    <span class="categoria">Visual Novel/Aventura</span>
+                    <p>
+                        Dezesseis estudantes são presos em uma academia e obrigados a participar de um novo jogo mortal,
+                        onde investigações e julgamentos definem quem sobreviverá.
+                    </p>
+                    <p class="preco">R$ 199,50</p>
+                    <button onclick="comprar('Danganronpa V3: Killing Harmony', 199.50)">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/deltarune.jpg" alt="deltarune" width="200">
+                    <h3>Deltarune</h3>
+                    <span class="categoria">RPG</span>
+                    <p>
+                        Embarque em uma aventura ao lado de Kris, Susie e Ralsei em um mundo repleto de humor,
+                        personagens marcantes e batalhas criativas.
+                    </p>
+                    <p class="preco">R$ 119,99</p>
+                    <button onclick="comprar('Deltarune', 119.99)">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/Donkey_Kong_Bananza.png" alt="DKBananza" width="200">
+                    <h3>Donkey Kong Bananza</h3>
+                    <span class="categoria">Aventura</span>
+                    <span class="exclusivo">Exclusivo para Nintendo Switch 2</span>
+                    <p>
+                        Junte-se a Donkey Kong e seus amigos em uma nova aventura repleta de ação, desafios e
+                        plataformas emocionantes.
+                    </p>
+                    <p class="preco">R$ 389,00</p>
+                    <button onclick="comprar('Donkey Kong Bananza', 389.00)">Comprar</button>
+                </div>
+                    <div class="card">
+                    <img src="imagens/dktropicalfreeze.jpg" alt="DKtropicalfreeze" width="200">
+                    <h3>Donkey Kong Country: Tropical Freeze</h3>
+                    <span class="categoria">Aventura</span>
+                    <p>
+                        Donkey Kong e seus amigos enfrentam os invasores Snowmads em uma aventura cheia de plataformas,
+                        desafios e fases criativas.
+                    </p>
+                    <p class="preco">R$ 349,00</p>
+                    <button onclick="comprar('Donkey Kong Country: Tropical Freeze', 349.00)">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/hollowknight.jpg" alt="hollowknight" width="200">
+                    <h3>Hollow Knight</h3>
+                    <span class="categoria">Metroidvania/Ação e aventura</span>
+                    <p>
+                        Explore Hallownest, um vasto reino subterrâneo em ruínas, enfrentando criaturas desafiadoras,
+                        descobrindo segredos e adquirindo novas habilidades ao longo da jornada.
+                    </p>
+                    <p class="preco">R$ 46,99</p>
+                    <button onclick="comprar('Hollow Knight', 46.99)">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/silksong.jpg" alt="silksong" width="200">
+                    <h3>Hollow Knight: Silksong</h3>
+                    <span class="categoria">Metroidvania/Ação e aventura</span>
+                    <p>
+                        Jogue como Hornet em uma nova aventura por um reino totalmente inédito, dominando habilidades
+                        ágeis, enfrentando inimigos poderosos e desvendando mistérios.
+                    </p>
+                    <p class="preco">R$ 46,99</p>
+                    <button onclick="comprar('Hollow Knight: Silksong', 46.99)">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/AirRidersKey.jpg" alt="kirbyairriders" width="200">
+                    <h3>Kirby Air Riders</h3>
+                    <span class="categoria">Corrida</span>
+                    <span class="exclusivo">Exclusivo para Nintendo Switch 2</span>
+                    <p>
+                        Kirby retorna aos céus em corridas repletas de ação, utilizando as famosas Air Ride Machines e
+                        habilidades de cópia em competições eletrizantes.
+                    </p>
+                    <p class="preco">R$ 399,99</p>
+                    <button onclick="comprar('Kirby Air Riders', 399.99)">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/klonoa.jpg" alt="klonoaseries" width="200">
+                    <h3>Klonoa Phantasy Reverie Series</h3>
+                    <span class="categoria">Plataforma</span>
+                    <p>
+                        Reviva as aventuras de Klonoa: Door to Phantomile e Klonoa 2: Lunatea's Veil com gráficos
+                        atualizados, modos de dificuldade ajustáveis e cooperativo local.
+                    </p>
+                    <p class="preco">R$ 199,50</p>
+                    <button onclick="comprar('Klonoa Phantasy Reverie Series', 199.50)">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/luigimansion3.jpg" alt="luigimansion" width="200">
+                    <h3>Luigi's Mansion 3</h3>
+                    <span class="categoria">Ação e aventura/Puzzle</span>
+                    <p>
+                        Luigi explora um hotel mal-assombrado para resgatar Mario e seus amigos, usando o aspirador
+                        Poltergust G-00 e a ajuda de Gooigi para resolver quebra-cabeças e capturar fantasmas.
+                    </p>
+                    <p class="preco">R$ 299,00</p>
+                    <button onclick="comprar('Luigi\'s Mansion 3', 299.00)">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/brothership.jpg" alt="MLBrothership" width="200">
+                    <h3>Mario & Luigi: Brothership</h3>
+                    <span class="categoria">RPG</span>
+                    <p>
+                        Mario e Luigi embarcam em uma aventura marítima pelo mundo de Concordia, explorando ilhas,
+                        enfrentando inimigos e usando golpes combinados para superar desafios.
+                    </p>
+                    <p class="preco">R$ 349,00</p>
+                    <button onclick="comprar('Mario & Luigi: Brothership', 349.00)">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/mariokart8.jpg" alt="mariokart8" width="200">
+                    <h3>Mario Kart 8 Deluxe</h3>
+                    <span class="categoria">Corrida</span>
+                    <p>
+                        A versão definitiva de Mario Kart 8 reúne todos os circuitos e personagens do DLC do Wii U, além
+                        de novos recursos, modo batalha renovado e corridas para até 12 jogadores.
+                    </p>
+                    <p class="preco">R$ 299,00</p>
+                    <button onclick="comprar('Mario Kart 8 Deluxe', 299.00)">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/Mario_Kart_World.jpg" alt="mariokartworld" width="200">
+                    <h3>Mario Kart World</h3>
+                    <span class="categoria">Corrida</span>
+                    <span class="exclusivo">Exclusivo para Nintendo Switch 2</span>
+                    <p>
+                        Corra por um mundo interconectado onde estradas, cidades, desertos e oceanos fazem parte de uma
+                        única aventura, com modos inéditos e corridas para até 24 pilotos.
+                    </p>
+                    <p class="preco">R$ 499,90</p>
+                    <button onclick="comprar('Mario Kart World', 499.90)">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/mariopartysuperstars.jpg" alt="mariopartysuperstars" width="200">
+                    <h3>Mario Party Superstars</h3>
+                    <span class="categoria">Party</span>
+                    <p>
+                        Reviva tabuleiros clássicos do Nintendo 64 e uma coleção de 100 minijogos da série Mario Party,
+                        todos com suporte ao multiplayer local e online.
+                    </p>
+                    <p class="preco">R$ 349,00</p>
+                    <button onclick="comprar('Mario Party Superstars', 349.00)">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/nsmbu.jpg" alt="newmariou" width="200">
+                    <h3>New Super Mario Bros. U Deluxe</h3>
+                    <span class="categoria">Plataforma 2D</span>
+                    <p>
+                        Salte, corra e coopere em uma aventura clássica de plataforma que inclui New Super Mario Bros. U
+                        e New Super Luigi U, com personagens extras e modos para toda a família.
+                    </p>
+                    <p class="preco">R$ 299,00</p>
+                    <button onclick="comprar('New Super Mario Bros. U Deluxe', 299.00)">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/persona5.jpg" alt="persona5" width="200">
+                    <h3>Persona 5 Royal</h3>
+                    <span class="categoria">RPG</span>
+                    <p>
+                        Vista a máscara dos Phantom Thieves, viva a rotina de um estudante em Tóquio e explore Palácios
+                        sobrenaturais em um RPG repleto de estilo, estratégia e narrativa.
+                    </p>
+                    <p class="preco">R$ 299,50</p>
+                    <button onclick="comprar('Persona 5 Royal', 299.50)">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/pokemon.jpg" alt="legendsza" width="200">
+                    <h3>Pokémon Legends: Z-A</h3>
+                    <span class="categoria">RPG</span>
+                    <p>
+                        Explore Lumiose City durante um grande projeto de revitalização urbana e descubra uma nova
+                        aventura Pokémon com batalhas e exploração reinventadas.
+                    </p>
+                    <p class="preco">R$ 499,99</p>
+                    <button onclick="comprar('Pokémon Legends: Z-A', 499.99)">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/pokemonletsgo.jpg" alt="letsgopikachu" width="200">
+                    <h3>Pokémon: Let's Go, Pikachu!</h3>
+                    <span class="categoria">RPG</span>
+                    <p>
+                        Reviva a aventura da região de Kanto ao lado de Pikachu, capturando Pokémon com mecânicas
+                        inspiradas em Pokémon GO e explorando um dos mundos mais clássicos da série.
+                    </p>
+                    <p class="preco">R$ 299,00</p>
+                    <button onclick="comprar('Pokémon: Lets Go, Pikachu!', 299.00)">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/Peachshowtime.png" alt="PeachShowtime" width="200">
+                    <h3>Princess Peach: Showtime!</h3>
+                    <span class="categoria">Ação e Aventura</span>
+                    <p>
+                        Peach assume o papel principal em um teatro mágico, utilizando diversas transformações para
+                        salvar o espetáculo e enfrentar a Trupe Uvapúrpura.
+                    </p>
+                    <p class="preco">R$ 299,99</p>
+                    <button onclick="comprar('Princess Peach: Showtime!', 299.99)">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/reddead.png" alt="reddead" width="200">
+                    <h3>Red Dead Redemption</h3>
+                    <span class="categoria">Ação/Aventura</span>
+                    <p>
+                        Embarque em uma jornada épica pelo Velho Oeste, enfrentando bandidos, caçando recompensas e
+                        vivendo a vida de um fora da lei em um mundo aberto cheio de desafios e histórias envolventes.
+                    </p>
+                    <p class="preco">R$ 249,90</p>
+                    <button onclick="comprar('Red Dead Redemption', 249.90)">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/Rhythm_Heaven_Groove.jpg" alt="rhythmheavengroove" width="200">
+                    <h3>Rhythm Heaven Groove</h3>
+                    <span class="categoria">Ritmo</span>
+                    <p>
+                        Entre no ritmo com uma coleção inédita de minijogos musicais cheios de humor, sincronizando seus
+                        movimentos com melodias cativantes em desafios para todos os públicos.
+                    </p>
+                    <p class="preco">R$ 149,90</p>
+                    <button onclick="comprar('Rhythm Heaven Groove', 149.90)">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/sonicracing.jpg" alt="sonicracing" width="200">
+                    <h3>Sonic Racing: CrossWorlds</h3>
+                    <span class="categoria">Corrida</span>
+                    <p>
+                        Corra por pistas que atravessam diferentes dimensões, usando veículos personalizáveis, gadgets e
+                        habilidades especiais em disputas cheias de velocidade.
+                    </p>
+                    <p class="preco">R$ 349,90</p>
+                    <button onclick="comprar('Sonic Racing: CrossWorlds', 349.90)">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/sonicsuperstars.jpg" alt="sonicsuperstars" width="200">
+                    <h3>Sonic Superstars</h3>
+                    <span class="categoria">Plataforma</span>
+                    <p>
+                        Sonic, Tails, Knuckles e Amy exploram as misteriosas Northstar Islands em uma aventura inédita,
+                        utilizando novos poderes das Chaos Emeralds e cooperativo para até quatro jogadores.
+                    </p>
+                    <p class="preco">R$ 249,90</p>
+                    <button onclick="comprar('Sonic Superstars', 249.90)">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/sonicxshadow.png" alt="sonicxshadow" width="200">
+                    <h3>Sonic X Shadow Generations</h3>
+                    <span class="categoria">Plataforma/Ação</span>
+                    <p>
+                        Reviva as fases mais icônicas de Sonic enquanto Shadow protagoniza uma campanha inédita,
+                        enfrentando seu passado e despertando novos poderes.
+                    </p>
+                    <p class="preco">R$ 249,90</p>
+                    <button onclick="comprar('Sonic X Shadow Generations', 249.90)">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/splatoon3icon.jpg" alt="splatoon3" width="200">
+                    <h3>Splatoon 3</h3>
+                    <span class="categoria">Tiro em terceira pessoa</span>
+                    <p>
+                        Participe de intensas batalhas de tinta, personalize seu Inkling ou Octoling e explore a região
+                        de Splatlands em modos competitivos e cooperativos.
+                    </p>
+                    <p class="preco">R$ 299,90</p>
+                    <button onclick="comprar('Splatoon 3', 299.90)">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/Raiders_Icon.png" alt="splatoonraiders" width="200">
+                    <h3>Splatoon Raiders</h3>
+                    <span class="categoria">Ação e aventura</span>
+                    <span class="exclusivo">Exclusivo para Nintendo Switch 2</span>
+                    <p>
+                        Viaje para as misteriosas Ilhas Spirhalite ao lado do Deep Cut em uma aventura inédita,
+                        explorando o arquipélago e desvendando seus segredos.
+                    </p>
+                    <p class="preco">R$ 249,90</p>
+                    <button onclick="comprar('Splatoon Raiders', 249.90)">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/Super_Mario_3D_All_Stars.jpg" alt="3dallstars" width="200">
+                    <h3>Super Mario 3D All-Stars</h3>
+                    <span class="categoria">Coletânea / Plataforma 3D</span>
+                    <p>
+                        Coleção comemorativa que reúne Super Mario 64, Super Mario Sunshine e Super Mario Galaxy, com
+                        resolução aprimorada e trilhas sonoras incluídas.
+                    </p>
+                    <p class="preco">R$ 299,90</p>
+                    <button onclick="comprar('Super Mario 3D All-Stars', 299.90)">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/3dworld.jpg" alt="3dworld" width="200">
+                    <h3>Super Mario 3D World + Bowser's Fury</h3>
+                    <span class="categoria">Plataforma 3D</span>
+                    <p>
+                        Salve o Reino das Fadas em Super Mario 3D World e enfrente um Bowser gigantesco na aventura
+                        inédita Bowser's Fury.
+                    </p>
+                    <p class="preco">R$ 349,00</p>
+                    <button onclick="comprar('Super Mario 3D World + Bowser\'s Fury', 349.00)">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/Mariowonder.png" alt="Mariowonder" width="200">
+                    <h3>Super Mario Bros. Wonder</h3>
+                    <span class="categoria">Plataforma 2D</span>
+                    <p>
+                        Descubra as Flores Fenômeno, que transformam completamente as fases, em uma nova aventura 2D de
+                        Mario com novos personagens e poderes.
+                    </p>
+                    <p class="preco">R$ 349,90</p>
+                    <button onclick="comprar('Super Mario Bros. Wonder', 349.90)">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/Super_Mario_Maker_2.jpg" alt="mariomaker" width="200">
+                    <h3>Super Mario Maker 2</h3>
+                    <span class="categoria">Plataforma/Criação</span>
+                    <p>
+                        Crie, compartilhe e jogue fases praticamente ilimitadas de Mario utilizando uma enorme variedade
+                        de ferramentas, temas e estilos clássicos da série.
+                    </p>
+                    <p class="preco">R$ 299,00</p>
+                    <button onclick="comprar('Super Mario Maker 2', 299.00)">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/Super_Mario_Odyssey.jpg" alt="marioodyssey" width="200">
+                    <h3>Super Mario Odyssey</h3>
+                    <span class="categoria">Plataforma 3D</span>
+                    <p>
+                        Viaje por reinos ao redor do mundo ao lado de Cappy para impedir os planos de Bowser, usando
+                        novas habilidades de captura para controlar inimigos e objetos.
+                    </p>
+                    <p class="preco">R$ 299,90</p>
+                    <button onclick="comprar('Super Mario Odyssey', 299.90)">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/Super_Mario_Party.jpg" alt="marioparty" width="200">
+                    <h3>Super Mario Party</h3>
+                    <span class="categoria">Party</span>
+                    <p>
+                        Junte seus amigos para disputar tabuleiros inéditos e mais de 80 minijogos, aproveitando os
+                        controles por movimento dos Joy-Con.
+                    </p>
+                    <p class="preco">R$ 299,90</p>
+                    <button onclick="comprar('Super Mario Party', 299.90)">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/smash.jpg" alt="smash" width="200">
+                    <h3>Super Smash Bros. Ultimate</h3>
+                    <span class="categoria">Luta</span>
+                    <p>
+                        A maior reunião de personagens da história dos videogames, com mais de 80 lutadores, centenas de
+                        cenários e diversos modos de jogo para partidas locais e online.
+                    </p>
+                    <p class="preco">R$ 299,90</p>
+                    <button onclick="comprar('Super Smash Bros. Ultimate', 299.90)">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/zeldabotw.jpg" alt="zeldabotw" width="200">
+                    <h3>The Legend of Zelda: Breath of the Wild</h3>
+                    <span class="categoria">Ação e aventura/Mundo aberto</span>
+                    <p>
+                        Explore um vasto mundo aberto como Link, resolvendo quebra-cabeças, enfrentando inimigos e
+                        recuperando suas memórias para derrotar Calamity Ganon.
+                    </p>
+                    <p class="preco">R$ 299,90</p>
+                    <button onclick="comprar('The Legend of Zelda: Breath of the Wild', 299.90)">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/echoeswisdom.jpg" alt="echoeswisdom" width="200">
+                    <h3>The Legend of Zelda: Echoes of Wisdom</h3>
+                    <span class="categoria">Ação e aventura</span>
+                    <p>
+                        Pela primeira vez protagonista da série principal, Zelda usa o poder do Tri Rod para criar ecos
+                        de objetos e criaturas e salvar o reino de Hyrule.
+                    </p>
+                    <p class="preco">R$ 349,00</p>
+                    <button onclick="comprar('The Legend of Zelda: Echoes of Wisdom', 349.00)">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/linkawakening.jpg" alt="linkawakening" width="200">
+                    <h3>The Legend of Zelda: Link's Awakening</h3>
+                    <span class="categoria">Ação e aventura</span>
+                    <p>
+                        Após naufragar na misteriosa Ilha Koholint, Link precisa explorar masmorras e despertar o Wind
+                        Fish para encontrar o caminho de volta para casa.
+                    </p>
+                    <p class="preco">R$ 299,00</p>
+                    <button onclick="comprar('The Legend of Zelda: Link\'s Awakening', 299.00)">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/zelda-tears-of-the-kingdom.jpg" alt="zeldatotk" width="200">
+                    <h3>The Legend of Zelda: Tears of the Kingdom</h3>
+                    <span class="categoria">Ação e aventura/Mundo aberto</span>
+                    <p>
+                        Explore Hyrule e os céus acima dela em uma aventura épica, utilizando novas habilidades para
+                        criar veículos, armas e soluções criativas para cada desafio.
+                    </p>
+                    <p class="preco">R$ 399,00</p>
+                    <button onclick="comprar('The Legend of Zelda: Tears of the Kingdom', 399.00)">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/tomodachi.jpg" alt="tomodachi" width="200">
+                    <h3>Tomodachi Life: Living the Dream</h3>
+                    <span class="categoria">Simulação de vida</span>
+                    <p>
+                        Crie Mii inspirados em amigos, familiares ou personagens favoritos e acompanhe suas vidas,
+                        relacionamentos e situações inusitadas em uma ilha cheia de humor.
+                    </p>
+                    <p class="preco">R$ 299,00</p>
+                    <button onclick="comprar('Tomodachi Life: Living the Dream', 299.00)">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/xenoblade.jpg" alt="xenoblade" width="200">
+                    <h3>Xenoblade Chronicles: Definitive Edition</h3>
+                    <span class="categoria">RPG de ação</span>
+                    <p>
+                        Descubra a jornada de Shulk para mudar o destino em um enorme RPG com combates em tempo real,
+                        mundo expansivo e conteúdo adicional exclusivo desta edição.
+                    </p>
+                    <p class="preco">R$ 299,00</p>
+                    <button onclick="comprar('Xenoblade Chronicles: Definitive Edition', 299.00)">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/Yoshi_Book.png" alt="yoshi" width="200">
+                    <h3>Yoshi and the Mysterious Book</h3>
+                    <span class="categoria">Ação e aventura</span>
+                    <span class="exclusivo">Exclusivo para Nintendo Switch 2</span>
+                    <p>
+                        Yoshi embarca em uma aventura dentro de um livro misterioso, explorando cenários que ganham vida
+                        em uma jornada repleta de plataformas, segredos e criatividade.
+                    </p>
+                    <p class="preco">R$ 399,00</p>
+                    <button onclick="comprar('Yoshi and the Mysterious Book', 399.00)">Comprar</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="destaque" class="destaque">
+            <h2>Jogo da semana</h2>
+            <p>
+                <span class="nome-destaque">Super Mario Party</span>
+                está com 50% de desconto especial até domingo.
+                De R$ 299,99 para R$ 149,50.
+            </p>
+        </section>
+
+        <section id="contato" class="contato">
+            <h2>Contato</h2>
+            <p>E-mail: contato@techplay.com</p>
+            <p>Telefone: (49) 99999-9999</p>
+        </section>
+
+    </main>
+    <footer>
+        <p>TechPlay - Projeto educacional</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
